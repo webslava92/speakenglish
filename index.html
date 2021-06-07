@@ -13,55 +13,60 @@
 
 <body>
 
-  <header class="header player" id="P1" data-property="{videoURL:'http://youtu.be/cVuxu60uDkc',containment:'#P1',startAt:0,mute:true,autoPlay:true,loop:false,opacity:1}">
+  <header class="header player" id="P1" data-property="{videoURL:'https://youtu.be/cVuxu60uDkc',containment:'#P1',startAt:0,mute:true,autoPlay:true,loop:false,opacity:1}">
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
           <a class="header__top-logo" href="index.html">
             <img class="logo__img" src="images/logo.png" alt="Логотип">
           </a>
-          <div class="header__top-menu">
+          <button class="menu__btn">
+            <span></span>
+          </button>
+          <nav class="header__top-menu menu" id="menu">
             <ul class="header__top-menu-items">
               <li class="header__top-menu-item">
-                <a class="header__top-menu-link" href="index.html#about">О ШКОЛЕ</a>
+                <a class="header__top-menu-link" href="#about">О ШКОЛЕ</a>
               </li>
               <li class="header__top-menu-item">
-                <a class="header__top-menu-link" href="index.html#price">КУРСЫ</a>
+                <a class="header__top-menu-link" href="#price">КУРСЫ</a>
               </li>
               <li class="header__top-menu-item">
-                <a class="header__top-menu-link" href="index.html#teachers">УЧИТЕЛЯ</a>
+                <a class="header__top-menu-link" href="#teachers">УЧИТЕЛЯ</a>
               </li>
               <li class="header__top-menu-item">
-                <a class="header__top-menu-link" href="index.html#reviews">ОТЗЫВЫ</a>
+                <a class="header__top-menu-link" href="#reviews">ОТЗЫВЫ</a>
               </li>
               <li class="header__top-menu-item">
-                <a class="header__top-menu-link" href="index.html#connection">ЗАПИСЬ</a>
+                <a class="header__top-menu-link" href="#connection">ЗАПИСЬ</a>
               </li>
               <li class="header__top-menu-item">
-                <a class="header__top-menu-link" href="index.html#map">АДРЕС</a>
+                <a class="header__top-menu-link" href="#map">АДРЕС</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="header__content">
-        <div class="header__content-inner">
+        <div class="header__content-inner" id="header__content">
           <h1 class="header__content-title">
             Английский язык с нуля до Лондона
           </h1>
-          <a class="header__content-btn" href="#">
+          <a class="header__content-btn" href="#connection">
             Начать обучение
           </a>
-          <svg class="header__content-arrow-svg" x="0px" y="0px" width="38.417px" height="18.592px"
-            viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;">
-            <g>
-              <path
-                d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
-              </path>
-            </g>
-          </svg>
+          <a href="#about" class="header__arrow-link">
+            <svg class="header__content-arrow-svg" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592"
+              style="enable-background:new 0 0 38.417 18.592;">
+              <g>
+                <path
+                  d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
+                </path>
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -72,66 +77,88 @@
       <h2 class="about__title">
         За пять лет мы обучили сотни людей, которые больше никогда не будут извиняться за свой английский
       </h2>
-      <div class="about__items">
-        <div class="about__item">
-          <img class="about__item-img" src="images/about1.jpg" alt="Картинка">
-          <h4 class="about__item-title">
-            Занятия в атмосфере лондонского дома
-          </h4>
-          <p class="about__item-text">
-            Никаких офисов, только дома с историей. Вокруг вас уют, кофе, профессиональные преподаватели и небольшая сплоченная
-            группа студентов
-          </p> 
-        </div>
-        <div class="about__item">
-          <img class="about__item-img" src="images/about2.jpg" alt="Картинка">
-          <h4 class="about__item-title">
-            Английские завтраки круглый год и пикники летом
-          </h4>
-          <p class="about__item-text">
-            Мы любим встречаться не только в стенах школы, но и за вкусной едой в кафе или парках. Когда я ем – я speaks English well
-          </p> 
-        </div>
-        <div class="about__item">
-          <img class="about__item-img" src="images/about3.jpg" alt="Картинка">
-          <h4 class="about__item-title">
-            Каникулы в Лондоне, Бермингем и Манчестер
-          </h4>
-          <p class="about__item-text">
-            Voyage voyage со студентами – это отдых, языковая практика и квесты с носителями языка: от торговли на марокканском
-            рынке до изготовления собственных духов в Грассе
-          </p> 
-        </div>
-        <div class="about__item">
-          <img class="about__item-img" src="images/about4.jpg" alt="Картинка">
-          <h4 class="about__item-title">
-            Кулинарные мастер-классы
-          </h4>
-          <p class="about__item-text">
-            Какое обучение без эклеров, кишей, бешамель и вот этого всего? Готовим и говорим о еде на английском
-          </p> 
-        </div>
-        <div class="about__item">
-          <img class="about__item-img" src="images/about5.jpg" alt="Картинка">
-          <h4 class="about__item-title">
-            Киноклуб
-          </h4>
-          <p class="about__item-text">
-            Серьезный и смешной, старый и современный англоязычный кинематограф, который мы не только смотрим, но и обсуждаем
-          </p> 
-        </div>
-        <div class="about__item">
-          <img class="about__item-img" src="images/about6.jpg" alt="Картинка">
-          <h4 class="about__item-title">
-            Лекции о моде, культуре и искусстве Англии
-          </h4>
-          <p class="about__item-text">
-            Встречи с приглашенными спикерами и экспертами из разных областей знаний. Говорим обо всем английском: мода, язык, культура и искусство
-          </p> 
+      <div class="about__inner">
+        <div class="about__items">
+          <div class="about__item">
+            <img class="about__item-img" src="images/about1.jpg" alt="Картинка">
+            <div class="about__item-info">
+              <h4 class="about__item-title">
+                Занятия в атмосфере лондонского дома
+              </h4>
+              <p class="about__item-text">
+                Никаких офисов, только дома с историей. Вокруг вас уют, кофе, профессиональные преподаватели и небольшая
+                сплоченная
+                группа студентов
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img class="about__item-img" src="images/about2.jpg" alt="Картинка">
+            <div class="about__item-info">
+              <h4 class="about__item-title">
+                Английские завтраки круглый год и пикники летом
+              </h4>
+              <p class="about__item-text">
+                Мы любим встречаться не только в стенах школы, но и за вкусной едой в кафе или парках. Когда я ем – я speaks
+                English
+                well
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img class="about__item-img" src="images/about3.jpg" alt="Картинка">
+            <div class="about__item-info">
+              <h4 class="about__item-title">
+                Каникулы в Лондоне, Бермингем и Манчестер
+              </h4>
+              <p class="about__item-text">
+                Voyage voyage со студентами – это отдых, языковая практика и квесты с носителями языка: от торговли на
+                марокканском
+                рынке до изготовления собственных духов в Грассе
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img class="about__item-img" src="images/about4.jpg" alt="Картинка">
+            <div class="about__item-info">
+              <h4 class="about__item-title">
+                Кулинарные мастер-классы
+              </h4>
+              <p class="about__item-text">
+                Какое обучение без эклеров, кишей, бешамель и вот этого всего? Готовим и говорим о еде на английском
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img class="about__item-img" src="images/about5.jpg" alt="Картинка">
+            <div class="about__item-info">
+              <h4 class="about__item-title">
+                Киноклуб
+              </h4>
+              <p class="about__item-text">
+                Серьезный и смешной, старый и современный англоязычный кинематограф, который мы не только смотрим, но и
+                обсуждаем
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img class="about__item-img" src="images/about6.jpg" alt="Картинка">
+            <div class="about__item-info">
+              <h4 class="about__item-title">
+                Лекции о моде, культуре и искусстве Англии
+              </h4>
+              <p class="about__item-text">
+                Встречи с приглашенными спикерами и экспертами из разных областей знаний. Говорим обо всем английском: мода,
+                язык,
+                культура и искусство
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="price" id="price">
     <div class="container">
       <div class="price__inner">
@@ -250,7 +277,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="teachers" id="teachers">
     <div class="container">
       <div class="teachers__inner">
@@ -412,7 +439,7 @@
     <div class="container">
       <div class="footer__inner">
         <div class="social__icons">
-          <a href="#" class="social__link">
+          <a href="https://www.facebook.com/slava.pustovit.1" class="social__link">
             <svg class="social__icon facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="32px" height="32px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
               <path style="fill:#0037ff;"
@@ -420,7 +447,7 @@
               </path>
             </svg>
           </a>
-          <a href="#" class="social__link">
+          <a href="https://vk.com/slavjanpustovit" class="social__link">
             <svg class="social__icon vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" width="32px" height="32px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
               <path style="fill:#0037ff;"
@@ -428,7 +455,7 @@
               </path>
             </svg>
           </a>
-          <a href="#" class="social__link">
+          <a href="https://www.instagram.com/pustovit.slava" class="social__link">
             <svg class="social__icon instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               width="32px" height="32px" viewBox="0 0 30 30" xml:space="preserve">
               <path style="fill:#0037ff;"
@@ -457,7 +484,7 @@
             <a class="footer__link footer__link-email" href="mailto:webslava92@ya.ru">webslava92@ya.ru</a>
           </div>
         </div>
-        <a href="#" class="offer">Договор публичной оферты</a>
+        <a href="#" class="offer__link">Договор публичной оферты</a>
       </div>
     </div>
   </footer>
